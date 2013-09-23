@@ -1,0 +1,341 @@
+html, body {
+	height: 100%;
+	font-size:85%;
+	font-family:'Lucida Grande',Verdana,sans-serif;
+	}
+
+* {
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	/*background-color:#FFFFFF;*/
+	background-color:transparent;
+	/*overflow: -moz-scrollbars-vertical;*/
+	}
+ul ul{
+	margin-left:10px;
+}
+a, a:visited{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#6A6A6A;
+	text-decoration:none;
+}
+a:hover{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#6A6A6A;
+	text-decoration:underline;
+}
+
+#pagina{
+	margin: 0 auto;
+}
+#conteudo{
+	margin-left:25px;
+}
+#conteudo .cabecalho{
+	color:#6A6A6A;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-left:5px;
+	padding-right:5px;
+	font-weight:bold;
+	display:block;
+}
+
+#conteudo .conteudoInternaOut{
+	color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-left:5px;
+}
+#conteudo .conteudoInternaOver{
+	color:#6A6A6A;
+	background-color:#DFE2E6;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-left:5px;
+}
+
+#conteudo h1{
+	margin-left:10px;
+}
+#topo{
+	height: 88px;
+	width:100%;
+}
+#topo h1{
+	background-image:url(../img/bgTopo.jpg);
+	background-repeat:repeat-x;
+	height: 88px;
+	width:100%;
+	float:left;
+	position:relative;
+}
+#topo span {
+	visibility: hidden;
+	display: none;
+}
+#topo h1 .logout{
+	font-size:18px;
+	position:absolute;
+	top:69px;
+	left:232px;
+}
+#topo h1 .ip{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#6A6A6A;
+	position:absolute;
+	top:8px;
+	left:320px;
+}
+#menu{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;	
+	width:482px;
+	background-color:#FFFFFF;
+	margin-left:3px;
+	position:absolute;
+	left:-460px;
+	top:88px;	
+}
+#menu img{
+	display:block;
+	float:left;
+}
+#menu img.clickMenu{
+	cursor:pointer;
+}
+#menu .conteudo{
+	/*border-right:#d3d3d3 1px solid;
+	border-left:#d3d3d3 1px solid;*/
+	border:#d3d3d3 1px solid;
+	border-bottom:none;
+	overflow:auto;
+	clear:both;
+	background-color:#f1f1f1;
+	min-height:282px;
+	_height:282px;
+}
+/* MENU FECHADO */
+#menu .conteudo .titFechado{
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	margin:20px;
+	color:#2f567e;
+
+}
+#menu .conteudo .formFechado{
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#2f567e;
+	
+}
+#menu .conteudo .formFechado .campo{
+	
+	padding-left:105px;
+	padding-bottom:5px;
+	
+}
+#menu .conteudo .formFechado .campoEntrada{
+	
+	background-image:url(../img/bg_imput_intro.jpg);
+	width:167px;
+	height:16px;
+	border:0;
+	
+}
+#menu .conteudo .formFechado .btnEnviar{
+	
+	padding-left:230px;
+	padding-top:5px;
+	
+}
+#menu .conteudo .btnCadastro{
+	
+	padding-top:50px;
+	padding-left:60px;
+	float:left;
+	
+}
+#menu .conteudo .btnContato{
+	
+	padding-top:50px;
+	padding-right:60px;
+	float:right
+	
+}
+
+/* ================ */
+#menu .conteudo a{
+	color:#000000;
+	text-decoration:none;
+	display:block;
+	height:18px;	
+}
+#menu .conteudo #blocoEsq{
+	width:230px;
+	float:left;
+}
+#menu .conteudo #blocoEsq #sup{
+	background-color:#FFFFFF;
+	background-image:url(../img/menu/riscoHor.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	padding:20px 0px 0px 20px;
+}
+#sup ul{
+	font-size:11px;	
+	list-style:none;
+}
+#menu li.liMenu{
+	list-style-image:url(../img/menu/setinhaAcesa.gif);
+}
+#sup li{
+	list-style-image:url(../img/menu/setinhaApagada.gif);
+	list-style-position:outside;
+}
+#sup .quadrado{
+	color:#000000;
+	list-style-image:url(../img/menu/quadradoApagado.gif);
+	list-style-position:outside;
+}
+#inf{
+	background-color:#f1f1f1;
+	padding:4px 0px 0px 20px;
+}
+#inf ul{
+	color:#646464;
+	font-size:11px;	
+	list-style:none;
+}
+#inf li{
+	list-style-image:url(../img/menu/setinhaApagada.gif);
+	list-style-position:outside;
+}
+#inf .setaAcesa{
+	color:#ff9000;
+	list-style-image:url(../img/menu/setinhaAcesa.gif);
+	list-style-position:outside;
+}
+#inf .quadradoAceso{
+	color:#000000;
+	list-style-image:url(../img/menu/quadradoAceso.gif);
+	list-style-position:outside;
+}
+#int .logoReceita{
+	width:71px;
+	height:36px;
+	float:right;
+	margin-right:10px;
+}
+#menu .conteudo #blocoDir{
+	width:234px;	
+	background-color:#f1f1f1;
+	background-image:url(../img/menu/riscoVert.jpg);
+	background-position:left;
+	background-repeat:no-repeat;
+	float:left;
+}
+#int{
+	padding:20px 0px 0px 20px;
+}
+#int ul{
+	color:#646464;
+	font-size:11px;	
+	list-style:none;
+}
+#int li{
+	list-style-image:url(../img/menu/setinhaApagada.gif);
+	list-style-position:outside;
+}
+#int .quadradoAceso{
+	color:#000000;
+	list-style-image:url(../img/menu/quadradoAceso.gif);
+	list-style-position:outside;
+}
+#int .setaAcesa{
+	color:#ff9000;
+	list-style-image:url(../img/menu/setinhaAcesa.gif);
+	list-style-position:outside;
+}
+
+/* DATE PICKER */
+a.dp-choose-date {
+	float: left;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 0px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(../img/calendar.png) no-repeat; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+input.dp-applied {
+	float: left;
+}
+/*-------------------------*/
+/*-- TW -------------------*/
+/*
+.cabecalho{
+	color:#6A6A6A;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-left:5px;
+	padding-right:5px;
+	font-weight:bold;
+	display:block;
+}
+ 
+.conteudoInternaOver{
+	color:#6A6A6A;
+	background-color:#DFE2E6;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-left:5px;
+}
+*/
+input[disabled]
+{
+      color:#000000;
+	  border:#4682b4 1px solid;
+      background-color: #FFFFFF;
+}
+
+#iframe1
+{
+	  /* border:#4682b4 1px solid; */
+      background-color: #DFE2E6;
+}
+
+TR.row0 {
+	color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-left:5px;
+ 	background-color: #eaeef2;
+ }
+ 
+TR.row1 {
+	color:#000000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding-left:5px;
+ 	background-color: #ffffff;
+ }
+.button {
+    border: 1px solid #006;
+    /* background: #9cf; */
+    background: #CCC;
+}

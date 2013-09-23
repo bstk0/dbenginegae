@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes autoGenerate="true">
+	<datastore-index kind="Niver" ancestor="false">
+		<property name="mes" direction="asc" />
+		<property name="dia" direction="asc" />
+	</datastore-index>
+</datastore-indexes> 
