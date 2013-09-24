@@ -31,6 +31,7 @@ It works!! ${variable}
 		<a href="<c:url value='/acao/incluir'/>">Acao.incluir</a>&nbsp;|&nbsp;
 		<a href="<c:url value='/acaosaldo/incluir'/>">AcaoSaldo.incluir</a>&nbsp;|&nbsp;
 		<a href="/angular1.html">Angular1</a>&nbsp;|&nbsp;
+		<a href="/angularContactManager/index.html">Angular Contact Manager</a>&nbsp;|&nbsp;
 		<a href="<c:url value='/index/log'/>">index.log</a>
 		</td>
 	</tr>

@@ -9,6 +9,8 @@
 </head>
 <body>
 <ul>
+	<li>[23/09/13] AngularJS - Contact Manager
+		<br>Inclusão do ContactManager da revista www
 	<li>[19/09/13] AngularJS
 		<br>Inclusão da angularjs1.
 	<li>[21/12] Powered
