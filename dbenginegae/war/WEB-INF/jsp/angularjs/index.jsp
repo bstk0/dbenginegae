@@ -78,7 +78,7 @@
         <select class="form-control" style="width: 400px;" name="item" ng-model="pedido.item" ng-options="item as item.descricao for item in (cardapio | filter:criterio)" ng-required="true"><option value=""> Selecione um item do cardápio...</option></select>
         <button class="btn btn-default" ng-click="pedir()" ng-disabled="pedidoForm.codigo.$invalid || pedidoForm.item.$invalid">Fazer Pedido!</button>
     </form>
-    <span ng-show="pedidoForm.codigo.$dirty && pedidoForm.codigo.$invalid">O campo Código da Mesa é obrigatório e deve ter 2 caracteres no máximo</span>
+    <span ng-show="pedidoForm.codigo.$dirty && pedidoForm.codigo.$invalid">O campo Código da Mesa é obrigatório e deve ter 2 caracteres no mínimo</span>
     <br/>
     <table class="table table-bordered" ng-show="pedidos.length != 0">
       <tr>
