@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!doctype html>
 <html ng-app>
   <head>
@@ -62,6 +63,7 @@
   </head>
   <body ng-controller="RestauranteController">
     <div class="well" style="width: 700px; margin-top: 60px;margin-left: auto; margin-right: auto;">
+    <a href="<c:url value='/index/index'/>">Voltar</a>
     <input type="text" class="form-control" ng-model="criterio" placeholder="O que você está procurando?"/><br/>
     <table class="table table-striped" ng-show="(cardapio | filter:criterio).length != 0">
       <tr>
