@@ -9,7 +9,21 @@ public class Acao {
 	private String sigla;
 	private String nome;
 	private String descricao;
+	//private Double saldo;
+	private String saldo;
 	
+public String getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(String saldo) {
+		this.saldo = saldo;
+	}
+	//	public Double getSaldo() {
+//		return saldo;
+//	}
+//	public void setSaldo(Double saldo) {
+//		this.saldo = saldo;
+//	}
 	public Long getId() {
 		return id;
 	}

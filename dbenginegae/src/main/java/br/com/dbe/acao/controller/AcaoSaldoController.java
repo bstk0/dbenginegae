@@ -44,7 +44,13 @@ public class AcaoSaldoController {
 	
 	@Path(value="/acaosaldo/lista")
 	public List<AcaoSaldo> lista() {
-		return dao.buscaTodos();
+		Double total = (double) 0;
+		List<AcaoSaldo> retorno = dao.buscaTodos();
+		for (AcaoSaldo acaoSaldo : retorno) {
+			total += acaoSaldo.getValor();
+		}
+		result.include("total", total);
+		return retorno;
 	}
 	
 	

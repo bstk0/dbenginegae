@@ -35,6 +35,10 @@ It works!! ${variable}
 		<a href="<c:url value='/index/log'/>">index.log</a>
 		</td>
 	</tr>
+	<tr>
+		<td><a href="<c:url value='/angularjs/index'/>">Angular (JM 121)</a>
+		</td>
+	</tr>
 </table>
 <%
     } else {

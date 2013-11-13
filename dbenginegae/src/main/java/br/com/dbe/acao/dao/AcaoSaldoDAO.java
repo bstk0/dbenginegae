@@ -49,7 +49,8 @@ public class AcaoSaldoDAO {
 	
 	public List<AcaoSaldo> buscaTodos(){
 		System.out.println("AcaoSaldoDAO.buscaTodos...");
-		return datastore.query(AcaoSaldo.class).list();
+		//return datastore.query(AcaoSaldo.class).list();
+		return datastore.query(AcaoSaldo.class).order("acao").list();
 	}
 
 	public List<AcaoSaldo> list(Integer mes){

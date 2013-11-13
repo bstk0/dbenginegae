@@ -13,6 +13,7 @@
     Sigla:     <input type="text" name="acao.sigla" /><br/>
     Nome:      <input type="text" name="acao.nome" /><br/>
     Descrição: <input type="text" name="acao.descricao" /><br/>
+    Saldo: <input type="text" name="acao.saldo" /><br/>
     <input type="submit" value="Salvar" />
 <a href="<c:url value='/acao/lista'/>">Acao.lista</a>&nbsp;|&nbsp;
 <a href="<c:url value='/index/index'/>">Voltar</a>    

@@ -16,7 +16,8 @@ public class AcaoSaldo {
 	private Date ultimaMovimentacao;
 	private MovimentacaoCode tipoMovimentacao;
 	private String strData;
-	private Double saldo;
+	//private Double saldo;
+	private Double valor;
 	private int qtde;
 	Key<Acao> acao;
 	@NotSaved private Acao acaoObj;
@@ -52,14 +53,20 @@ public class AcaoSaldo {
 	public void setUltimaMovimentacao(Date ultimaMovimentacao) {
 		this.ultimaMovimentacao = ultimaMovimentacao;
 	}
-	public Double getSaldo() {
-		return saldo;
-	}
-	public void setSaldo(Double saldo) {
-		this.saldo = saldo;
-	}
+//	public Double getSaldo() {
+//		return (saldo == null ? (double) 0 : saldo);
+//	}
+//	public void setSaldo(Double saldo) {
+//		this.saldo = saldo;
+//	}
 	public int getQtde() {
 		return qtde;
+	}
+	public Double getValor() {
+		return valor;
+	}
+	public void setValor(Double valor) {
+		this.valor = valor;
 	}
 	public void setQtde(int qtde) {
 		this.qtde = qtde;

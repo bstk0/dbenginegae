@@ -13,11 +13,11 @@
 <ul>
 <c:forEach items="${acaoSaldoList}" var="acaosaldo">
     <ol> ${acaosaldo.id} - SALDO: ${acaosaldo.saldo} / Tipo Movimentacao: ${acaosaldo.tipoMovimentacao}
-    	<li> ${acaosaldo.acaoObj.sigla }: ${acaosaldo.acaoObj.nome }  </li> 
+    	<li> ${acaosaldo.acaoObj.sigla }: ${acaosaldo.acaoObj.nome } || ${acaosaldo.saldo } </li> 
     </ol>	
 </c:forEach>
 </ul>
-<br>
+<br> TOTAL : ${total}
 <a href="<c:url value='/acao/incluir'/>">Acao.incluir</a>&nbsp;|&nbsp;
 <a href="<c:url value='/index/index'/>">Voltar</a>
 </body>

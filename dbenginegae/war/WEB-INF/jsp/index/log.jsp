@@ -9,6 +9,8 @@
 </head>
 <body>
 <ul>
+	<li>[10/11/13] AcaoSaldo
+		<br>Inclusão do Total
 	<li>[23/09/13] AngularJS - Contact Manager
 		<br>Inclusão do ContactManager da revista www
 	<li>[19/09/13] AngularJS
