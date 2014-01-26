@@ -11,7 +11,7 @@
   </head>
 
   <body>
-[121113.1]=> <%= request.getRequestURI() %><br>
+[260114.2]=> <%= request.getRequestURI() %><br>
 <%
 	String uri = request.getRequestURI(); //"/index/index";
 	UserService userService = UserServiceFactory.getUserService();

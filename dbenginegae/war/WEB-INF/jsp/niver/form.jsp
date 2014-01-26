@@ -22,6 +22,8 @@ function excluir(uri) {
         document.location=uri+"&mes="+document.sel.mes.value;          
     }    
 }
+
+
 </script>
 <title>Nivers</title>
 </head>
@@ -75,6 +77,7 @@ function excluir(uri) {
      <td><SPAN class="cabecalho">Data</SPAN></td>
      <td><SPAN class="cabecalho">Telefone</SPAN></td>
      <td><SPAN class="cabecalho">&nbsp;</SPAN></td>
+     <td><SPAN class="cabecalho">&nbsp;</SPAN></td>
   </TR>
    -->
   <thead>
@@ -84,6 +87,7 @@ function excluir(uri) {
      <th>E-mail</th>
      <th>Data</th>
      <th>Telefone</th>
+     <th>&nbsp;</th>
      <th>&nbsp;</th>
   </tr>
   </thead>
@@ -112,7 +116,14 @@ function excluir(uri) {
 			<a href="javascript:excluir('<c:out value="${editUrl}"/>');" class="ui-state-default ui-corner-all">DEL</a>
 			<!-- </SPAN>  -->
 			</td>
+			<td align="center"><!-- <SPAN class="conteudoInterna">  -->
+			<a href="javascript:addGoogleAgenda('${counter}');" class="ui-state-default ui-corner-all">GOOGLE AGENDA</a>
+			<!-- </SPAN>  -->
+			</td>
 		</tr>
+		<input type="hidden" name="nome" value="${nivers.nome}" />
+		<input type="hidden" name="dataNiver" value="<fmt:formatDate value="${nivers.data}" type="date" pattern="MMdd" />" />
+		
 		<c:set var="counter" value="${counter + 1}" />
 	</c:forEach>
 	</TBODY>
@@ -224,6 +235,18 @@ function criaJanela(id,icone,titulo,pagina,tamH,tamW,modal,botoes,ajax){
       
     return result;  
 }  
+
+function addGoogleAgenda(index) {
+	var URL_FIXA = "http://www.google.com/calendar/event?action=TEMPLATE&text=ANIVERSARIO%20";
+	var ano = new Date().getFullYear();
+	var nindex = index-1;		
+	var data = document.sel.elements.dataNiver[nindex].value;
+	var nome = document.sel.elements.nome[nindex].value;
+	var urlGoogle = URL_FIXA + nome;
+	urlGoogle += "&dates=" + ano + data + "T080000/" + ano + data + "T083000"; 
+	window.open(urlGoogle);
+}
+
 </script>
 |<a href="<c:url value='/index/index'/>">Voltar</a>
 </form>

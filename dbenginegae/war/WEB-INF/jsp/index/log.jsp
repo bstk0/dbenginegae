@@ -9,6 +9,9 @@
 </head>
 <body>
 <ul>
+	<li>[26/01/14] 
+		<br>2.Inclusão opção Google Agenda
+		<br>1.Rest stock - Inclusão (não funcionou)
 	<li>[11/11/13] AngularJs - Pedido
 		<br>Inclusão
 	<li>[10/11/13] AcaoSaldo
